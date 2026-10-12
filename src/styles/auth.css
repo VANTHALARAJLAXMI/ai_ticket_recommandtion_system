@@ -1,0 +1,33 @@
+.auth-page { min-height: 100vh; display: grid; grid-template-columns: 0.9fr 1.1fr; }
+.auth-aside {
+  background: var(--navy);
+  color: white;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.auth-aside p { color: #c5d4e6; max-width: 26rem; }
+.auth-panel { display: grid; align-content: center; padding: 32px 8vw; }
+.auth-card { display: grid; gap: 14px; max-width: 440px; }
+.auth-card h1 { font-size: 2rem; letter-spacing: -0.03em; }
+.role-choice {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 8px;
+}
+.role-choice legend { font-weight: 600; }
+.role-option {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 40px;
+  padding: 0 12px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: white;
+  cursor: pointer;
+}
+.role-option.is-selected { border-color: var(--blue); background: #eef5ff; }

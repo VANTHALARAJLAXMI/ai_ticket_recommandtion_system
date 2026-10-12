@@ -1,0 +1,33 @@
+.field { display: grid; gap: 6px; }
+.field-label { font-weight: 600; }
+.field input, .field select, .field textarea {
+  width: 100%;
+  border: 1px solid #c5d3e2;
+  background: white;
+  border-radius: 8px;
+  padding: 10px 12px;
+  min-height: 42px;
+}
+.field textarea { min-height: 140px; resize: vertical; }
+.field input:focus, .field select:focus, .field textarea:focus {
+  outline: 3px solid rgba(27, 111, 214, 0.2);
+  border-color: var(--blue);
+}
+.field-error { color: var(--danger); font-size: 0.88rem; }
+.check { display: flex; gap: 8px; align-items: center; }
+.search-bar { display: flex; align-items: center; gap: 8px; border: 1px solid #c5d3e2; border-radius: 8px; padding: 0 10px; background: white; min-height: 42px; }
+.search-bar input { border: 0; width: 100%; min-height: 38px; outline: none; }
+.dialog-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(12, 35, 64, 0.46);
+  display: grid;
+  place-items: center;
+  padding: 16px;
+  z-index: 30;
+}
+.dialog { width: min(440px, 100%); padding: 18px; display: grid; gap: 12px; background: white; border-radius: 16px; }
+.toast-stack { position: fixed; right: 16px; bottom: 16px; display: grid; gap: 8px; z-index: 40; }
+.toast { background: var(--navy); color: white; padding: 12px 14px; border-radius: 12px; max-width: 320px; box-shadow: var(--shadow); }
+.toast-error { background: var(--danger); }
+.toast-success { background: var(--success); }

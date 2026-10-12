@@ -1,0 +1,12 @@
+project_id = "ai-it-support-ticket-system"
+
+# The gateway does not receive a JWT on browser preflight requests.
+# Each function rejects requests that do not belong to a signed-in user.
+[functions.analyze-ticket]
+verify_jwt = false
+
+[functions.ollama-health]
+verify_jwt = false
+
+[functions.create-agent]
+verify_jwt = false

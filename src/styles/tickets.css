@@ -1,0 +1,19 @@
+.filters { display: grid; grid-template-columns: 1.4fr repeat(4, 0.7fr); gap: 10px; align-items: end; }
+.ticket-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; }
+.ticket-card { padding: 16px; display: grid; gap: 10px; transition: transform 0.15s ease, border-color 0.15s ease; }
+.ticket-card:hover { transform: translateY(-2px); border-color: #b7cbe2; }
+.ticket-card h3 { font-size: 1.05rem; }
+.ticket-number { font-family: var(--mono); color: var(--cyan); font-size: 0.85rem; }
+.table-wrap { overflow-x: auto; }
+table { width: 100%; border-collapse: collapse; }
+th, td { text-align: left; padding: 12px 10px; border-bottom: 1px solid var(--line); vertical-align: top; }
+th { font-size: 0.82rem; color: var(--muted); font-weight: 700; }
+.detail-grid { display: grid; grid-template-columns: 1.4fr 0.8fr; gap: 16px; }
+.detail-main, .detail-side { padding: 18px; display: grid; gap: 14px; align-content: start; }
+.description { white-space: pre-wrap; line-height: 1.5; }
+.meta-list { display: grid; grid-template-columns: 140px 1fr; gap: 8px 12px; margin: 0; }
+.meta-list dt { color: var(--muted); }
+.comment { padding: 12px; border: 1px solid var(--line); border-radius: 12px; display: grid; gap: 6px; }
+.comment header { display: flex; justify-content: space-between; gap: 8px; }
+.pager { display: flex; justify-content: space-between; align-items: center; }
+.mobile-cards { display: none; }
